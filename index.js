@@ -1,7 +1,3 @@
-const express = require('express');
+import app from './src/app.js';
 
-const app = express();
-
-app.listen(3000, () => console.log("stand up server on port 3000"));
-
-app.get('/', (req, res) => res.send("Hello World!"));
+app.listen(8000, () => console.log('Listening on http://localhost:8000'));
